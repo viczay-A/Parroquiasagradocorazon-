@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="zauU2ObS3UWQZOjojh83bSX6lSsIurLl1kaqdGvHOqI" />
+    <title>Parroquia Sagrado Corazón - Claypole</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/altar-central.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+```
+    .hero h1 { font-size: 2.5rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+    .hero p { font-size: 1.2rem; font-style: italic; }
+
+    .container { padding: 40px 20px; text-align: center; max-width: 900px; margin: auto; }
+
+    .cuadro-fachada {
+        width: 95%;
+        max-width: 600px;
+        margin: 20px auto 40px auto;
+        background: white;
+        padding: 12px;
+        border: 1px solid #d4af37;
+        outline: 2px solid #4a0e0e;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    .cuadro-fachada img { width: 100%; display: block; border-radius: 2px; }
+
+    .btn-principal {
+        display: inline-block;
+        background: #D4AF37;
+        color: #4A0E0E;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 30px;
+        margin-top: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+
+    .btn-principal:hover { transform: scale(1.05); background: #f2d479; }
+
+    h2 { color: #4a0e0e; font-size: 1.8rem; margin-bottom: 15px; }
+    .texto-bienvenida { font-size: 1.1rem; line-height: 1.8; color: #444; max-width: 700px; margin: auto; }
+</style>
+```
+
+</head>
+<body>
+
+```
+<nav class="navbar">
+    <div class="logo">Parroquia Sagrado Corazón</div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="sacramentos.html">Sacramentos</a></li>
+        <li><a href="horarios.html">Horarios</a></li>
+        <li><a href="contacto.html">Ubicación</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <h1>Bienvenidos</h1>
+    <p>"Comunidad unida en la fe y la caridad"</p>
+    <a href="horarios.html" class="btn-principal">Consultar Horarios</a>
+</header>
+
+<div class="container">
+    <h2>Nuestra Casa de Oración</h2>
+    <p class="texto-bienvenida">
+        Un lugar de encuentro para todos los vecinos de Claypole. Te invitamos a participar de nuestras celebraciones y a formar parte de esta gran familia parroquial.
+    </p>
+
+    <div class="cuadro-fachada">
+        <img src="img/fachada-parroquia.jpg" alt="Fachada de la Parroquia">
+    </div>
+
+    <div style="background: #4a0e0e; color: white; padding: 30px; border-radius: 15px;">
+        <h3>¿Necesitás realizar un trámite?</h3>
+        <p>Atención en secretaría de Martes a Viernes de 16:30 a 18:30hs.</p>
+        <a href="sacramentos.html" style="color: #D4AF37; font-weight: bold; text-decoration: none;">Ver requisitos para Bautismos →</a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>Parroquia Sagrado Corazón</h4>
+            <p>Comunidad unida en la fe y la caridad, al servicio de los vecinos de Claypole.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <a href="index.html">Inicio</a>
+            <a href="sacramentos.html">Sacramentos</a>
+            <a href="horarios.html">Horarios</a>
+            <a href="contacto.html">Ubicación</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contacto</h4>
+            <p>📍 Av. Lacaze 3963, Claypole</p>
+            <p>Buenos Aires, Argentina</p>
+            <a href="https://wa.me/5491155890229" style="margin-top: 8px;">💬 WhatsApp Jaquelina</a>
+            <a href="https://wa.me/5491136885567">💬 WhatsApp Fabiana</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Parroquia Sagrado Corazón · Claypole, Buenos Aires</p>
+    </div>
+</footer>
+
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('abierto');
+        navLinks.classList.toggle('abierto');
+    });
+</script>
+```
+
+</body>
+</html>
